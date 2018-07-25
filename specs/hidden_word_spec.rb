@@ -14,4 +14,12 @@ class HiddenWordTest < MiniTest::Test
     assert_equal("***** ** *******", @word.display())
   end
 
+  def test_letter_in_word()
+    assert_equal(true, @word.letter_in_word("e"))
+  end
+
+  def test_letter_not_in_word()
+    assert_equal(false, @word.letter_in_word("z"))
+  end
+
 end

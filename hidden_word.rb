@@ -10,4 +10,8 @@ class HiddenWord
     return @word.gsub(/[A-Z]/, "*")
   end
 
+  def letter_in_word(letter)
+    @word.include?(letter.upcase())
+  end
+
 end
