@@ -4,7 +4,7 @@ require_relative("../player.rb")
 require_relative("../hidden_word.rb")
 require_relative("../snowman_game.rb")
 
-class SnowmanGameTest
+class SnowmanGameTest < MiniTest::Test
 
 def setup()
 

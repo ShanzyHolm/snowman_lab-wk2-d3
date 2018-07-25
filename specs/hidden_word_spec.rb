@@ -4,10 +4,14 @@ require_relative("../player.rb")
 require_relative("../hidden_word.rb")
 require_relative("../snowman_game.rb")
 
-class HiddenWordTest
+class HiddenWordTest < MiniTest::Test
 
-def setup()
+  def setup()
+    @word = HiddenWord.new("Wheel of Fortune")
+  end
 
-end
+  def test_display_word()
+    assert_equal("***** ** *******", @word.display())
+  end
 
 end
