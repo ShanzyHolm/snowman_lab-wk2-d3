@@ -11,7 +11,7 @@ class HiddenWordTest < MiniTest::Test
   end
 
   def test_display_word()
-    assert_equal("***** ** *******", @word.display())
+    assert_equal("**EE* O* *O****E", @word.display(["e", "o"]))
   end
 
   def test_letter_in_word()

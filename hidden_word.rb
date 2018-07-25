@@ -6,8 +6,9 @@ class HiddenWord
     @word = word.upcase()
   end
 
-  def display()
-    return @word.gsub(/[A-Z]/, "*")
+  def display(guessed_letters)
+    guesses = guessed_letters.join().upcase()
+    return @word.gsub(/[^#{guesses} ]/, "*")
   end
 
   def letter_in_word(letter)
